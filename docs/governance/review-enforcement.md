@@ -1,0 +1,81 @@
+---
+title: "Review Enforcement Rules"
+last_updated: 2026-01-17 # YYYY-MM-DD
+tags: [governance, review, documentation]
+---
+
+# Review Enforcement Rules
+
+Brief summary: Enforce documentation update compliance during review by blocking approval when required doc updates are missing.
+
+## When to use this doc
+
+Use this document during review of any change that may trigger documentation updates.
+
+## Scope and intent
+
+These rules apply to any change that matches the doc-update triggers in `/docs/governance/update-triggers.md`.
+If a trigger applies, documentation updates are mandatory and approval is blocked until they are complete.
+
+## Approval-block rule
+
+Block approval when **any** doc-update trigger applies **and** any required documentation updates are missing.
+Required updates include:
+
+- The relevant documentation content updates.
+- The parent index update for any new doc (and explicit confirmation when no index update is expected).
+- A dated entry in `/docs/updates.md`.
+- A doc-impact declaration in the task plan (story file).
+- The docs review checklist copied into the story file (task plan) with completion evidence.
+
+Also block approval if the required doc-impact declaration is missing, regardless of trigger outcome.
+
+## Required reviewer checks
+
+At minimum, reviewers MUST verify:
+
+- **Template compliance:** New/updated docs follow `/docs/_templates/doc-template.md` and required frontmatter.
+- **Parent index updates:** New docs are linked from their nearest parent index per `/docs/governance/link-and-index-rules.md`. If no index update is expected, reviewers must verify and document why.
+- **Updates log entry:** `/docs/updates.md` includes a dated entry that follows the requirements in `/docs/maintenance/docs-update-process.md`.
+- **Link integrity:** Links are root-relative (e.g., `/docs/...`).
+
+## Doc-impact declaration gate (see [Doc-Impact Detection Guidance](/docs/governance/doc-impact-detection-guidance.md))
+
+The task plan must include a doc-impact decision (Yes/No + rationale) per the guidance above.
+
+- If **Doc impact = Yes**, reviewers must confirm the required doc updates listed above are complete.
+- If **Doc impact = No**, reviewers must verify **none** of the triggers apply and document the justification per the guidance.
+
+## Doc-first enforcement
+
+Behavior changes must have documentation updated **before** approval. If docs are missing or lagging the change, approval is blocked.
+
+## Reviewer checklist and completion criteria
+
+Use the following checklist during review:
+
+- [ ] Doc-impact decision recorded (Yes/No + rationale) in the task plan.
+- [ ] Docs review checklist copied into the story file (task plan) with completion evidence.
+- [ ] Triggers evaluated against `/docs/governance/update-triggers.md`.
+- [ ] Required docs updated using the canonical template and required frontmatter.
+- [ ] Parent index updated for any new docs, or explicit verification recorded when no index update is expected.
+- [ ] `/docs/updates.md` entry added per `/docs/maintenance/docs-update-process.md`.
+- [ ] All links are root-relative.
+- [ ] Doc-first rule satisfied for behavior changes.
+
+Completion criteria: **All** checklist items are verified. If any item fails, approval is blocked.
+
+## Common failure modes
+
+- Missing parent index update after adding a new doc.
+- Missing or incomplete `/docs/updates.md` entry.
+- “No doc impact” declared without verifying all trigger categories.
+
+## Related docs
+
+- [Governance Index](/docs/governance/index.md)
+- [Documentation Update Triggers](/docs/governance/update-triggers.md)
+- [Doc-Impact Detection Guidance](/docs/governance/doc-impact-detection-guidance.md)
+- [Link and Index Update Rules](/docs/governance/link-and-index-rules.md)
+- [Documentation Updates Log](/docs/updates.md)
+- [Docs Update Review Checklist](/docs/maintenance/docs-update-review-checklist.md)
