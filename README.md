@@ -1,4 +1,4 @@
-# bmad-autodoc
+# AutoDiataxis
 
 Reusable documentation starter pack for any repository.
 

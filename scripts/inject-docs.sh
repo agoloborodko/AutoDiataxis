@@ -75,8 +75,8 @@ fi
 mkdir -p "$target_docs"
 ( cd "$source_docs" && tar --exclude='.DS_Store' -cf - . ) | ( cd "$target_docs" && tar -xf - )
 
-begin_marker="# BEGIN injected-docs-context (bmad-autodoc)"
-end_marker="# END injected-docs-context (bmad-autodoc)"
+begin_marker="# BEGIN injected-docs-context (AutoDiataxis)"
+end_marker="# END injected-docs-context (AutoDiataxis)"
 
 if [ -f "$target_context" ] && grep -Fq "$begin_marker" "$target_context"; then
   printf 'project-context.md already contains injected block, skipping append\n'
