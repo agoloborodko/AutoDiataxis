@@ -1,22 +1,21 @@
 ---
-title: "General Contribution and Process"
-last_updated: 2026-01-08 # YYYY-MM-DD
-tags: [reference, app, general, documentation]
+title: "General Reference Index"
+last_updated: 2026-02-23
+tags: [index, app, reference, documentation]
 ---
 
-# General Contribution and Process
+# General Reference Index
 
-Brief summary: Cross-domain contribution rules, process expectations, and shared guardrails that apply across the app.
+Brief summary: Placeholder index for project-wide conventions and general reference docs.
 
 ## When to use this doc
 
-Use this index when you need contribution standards or cross-domain guardrails that apply to multiple app areas.
+Use this index for conventions, contribution notes, and project-wide technical references that do not fit a narrower domain.
 
-## Reference docs
+## General reference docs
 
-- [General Contribution and Process](/docs/app/reference/general/contribution-and-process.md)
+- Add general reference docs here.
 
 ## Related docs
 
 - [App Reference Index](/docs/app/reference/index.md)
-- [Docs Update Process](/docs/maintenance/docs-update-process.md)

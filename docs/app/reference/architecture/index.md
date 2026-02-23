@@ -1,29 +1,22 @@
 ---
-title: "App Architecture"
-last_updated: 2026-01-10 # YYYY-MM-DD
-tags: [reference, app, architecture, documentation]
+title: "App Architecture Reference"
+last_updated: 2026-02-23
+tags: [index, app, reference, documentation]
 ---
 
-# App Architecture
+# App Architecture Reference
 
-Brief summary: Index and navigation for the Home Accounting app architecture guidance, sharded for maintainability.
+Brief summary: Placeholder index for architecture-level reference docs (boundaries, modules, data flow, interfaces).
 
 ## When to use this doc
 
-Use this index when you need the app architecture overview or to jump to specific architecture sections.
+Use this index for code-aligned architecture details and contracts.
 
-## Architecture Sections
+## Architecture docs
 
-- [Data Persistence](/docs/app/reference/architecture/data-persistence.md)
-- [API Integration](/docs/app/reference/architecture/api-integration.md)
-- [Guardrails and Testing (Domain-Scoped)](/docs/app/reference/architecture/guardrails-and-testing.md)
-- [Project Structure and Boundaries](/docs/app/reference/architecture/project-structure-and-boundaries.md)
+- Add architecture reference docs here.
 
 ## Related docs
 
-- [App Documentation Index](/docs/app/index.md)
-- [Project Overview - Home Accounting (mobile)](/docs/app/overview/project-overview.md)
+- [App Reference Index](/docs/app/reference/index.md)
 - [Architecture Overview](/docs/app/explanation/architecture-overview.md)
-- [Technology Stack and Decisions](/docs/app/explanation/technology-and-decisions.md)
-- [Validation and Readiness](/docs/app/explanation/validation-and-readiness.md)
-- [Documentation Updates Log](/docs/updates.md)

@@ -67,12 +67,3 @@ Use a dual placement approach:
 
 Only add **How‑to** or **Tutorial** feature docs when there is a real, repeatable task
 or an onboarding path that someone new can follow end‑to‑end.
-
-## Current file mapping (minimal changes)
-
-- `docs/app/project-overview.md` → `docs/app/overview/project-overview.md`
-- `docs/app/architecture/index.md` → `docs/app/reference/architecture/index.md`
-- `docs/app/architecture/overview.md` → `docs/app/explanation/architecture-overview.md`
-- `docs/app/index.md` stays as the entry point and Diataxis map
-
-These moves are optional until you want to reorganize the files.

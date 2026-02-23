@@ -1,29 +1,22 @@
 ---
 title: "App Documentation Index"
-last_updated: 2026-01-17 # YYYY-MM-DD
+last_updated: 2026-02-23
 tags: [index, app, documentation, overview]
 ---
 
 # App Documentation Index
 
-Brief summary: Entry point for application documentation organized by Diataxis categories.
+Brief summary: Starter index for project-specific application documentation organized by Diataxis categories.
 
 ## When to use this doc
 
-Use this index to find app docs by purpose (overview, explanation, reference).
+Use this index as the entry point for documenting the current repository's application/system details.
 
-## Quick Reference
+## How to start
 
-- [Project Overview](/docs/app/overview/project-overview.md)
-- [Architecture Overview](/docs/app/explanation/architecture-overview.md)
-- [Architecture Reference Index](/docs/app/reference/architecture/index.md)
-- [Run Local Checks](/docs/app/how-to/run-local-checks.md)
-
-## Getting Started
-
-1. Start with the [Project Overview](/docs/app/overview/project-overview.md) for scope and stack.
-2. Read the [Architecture Overview](/docs/app/explanation/architecture-overview.md) to understand decisions and structure.
-3. Use the [Architecture Reference Index](/docs/app/reference/architecture/index.md) for specifics and constraints.
+1. Replace placeholder summaries with project-specific content.
+2. Add or update docs in the correct Diataxis folder.
+3. Keep indexes updated as new docs are added.
 
 ## Overview
 
@@ -45,4 +38,4 @@ Use this index to find app docs by purpose (overview, explanation, reference).
 
 - [Documentation Index](/docs/index.md)
 - [Documentation Updates Log](/docs/updates.md)
-- [Doc Template](/docs/_templates/doc-template.md)
+- [Diataxis Structure (App Docs)](/docs/governance/diataxis-structure.md)

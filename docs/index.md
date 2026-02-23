@@ -1,25 +1,21 @@
 ---
 title: Documentation Index
-last_updated: 2026-01-02
+last_updated: 2026-02-23
 tags: [index, documentation]
 ---
 
 # Documentation Index
 
-Brief summary: Authoritative entry point for project documentation.
+Brief summary: Reusable entry point for documentation governance, maintenance, templates, and project-specific app docs.
 
 ## When to use this doc
 
-Use this index to discover and navigate project documentation.
+Use this index to navigate the documentation system and start from the right workflow.
 
 ## Related docs
 
 - [Documentation Updates Log](/docs/updates.md)
 - [Doc Template](/docs/_templates/doc-template.md)
-
-## Task indexes
-
-- [Task indexes](/docs/tasks/index.md)
 
 ## Templates
 
@@ -33,6 +29,6 @@ Use this index to discover and navigate project documentation.
 
 - [Maintenance Index](/docs/maintenance/index.md)
 
-## App
+## App (Project-Specific)
 
 - [App Documentation Index](/docs/app/index.md)
