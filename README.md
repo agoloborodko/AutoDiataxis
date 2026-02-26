@@ -2,6 +2,14 @@
 
 Reusable documentation starter pack for any repository.
 
+## AI Agent Workflow
+
+This project is tailored for working with AI agents, specifically [BMAD-METHOD](https://docs.bmad-method.org/), but it should work with any agent.
+
+To use it with a given agent, point that agent's repo entrypoint file (`AGENTS.md`, `CLAUDE.md`, or similar) to `project-context.md`.
+
+Key feature: agents read the governance/maintenance instructions and update documentation when changes require it.
+
 It provides:
 
 - Documentation governance rules (`docs/governance/`)
