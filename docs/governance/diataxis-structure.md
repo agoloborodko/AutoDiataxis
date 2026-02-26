@@ -1,69 +1,61 @@
 ---
 title: "Diataxis Structure (App Docs)"
-last_updated: 2026-01-02 # YYYY-MM-DD
+last_updated: 2026-02-25 # YYYY-MM-DD
 tags: [governance, documentation, structure, diataxis]
 ---
 
 # Diataxis Structure (App Docs)
 
-Brief summary: Canonical documentation structure for the app, using the Diataxis/Divio model and avoiding speculative or mixed‑purpose content.
+Brief summary: Canonical starter documentation structure for app docs using the Diataxis model, with strict category folders and no extra overview category.
 
 ## When to use this doc
 
 Use this when adding or reorganizing app documentation so content lands in the correct category.
 
-## Structure (safer baseline)
+## Starter scaffold structure
 
 ```
 docs/app/
   index.md
-  overview/
-    index.md
-    project-overview.md
   tutorials/
     index.md
-    getting-started.md            # only if an onboarding walkthrough exists
   how-to/
-    (empty until real task guides exist)
-  reference/
     index.md
-    architecture/                 # layers/modules/boundaries (code-structured)
-    runtime/                      # routing, state, DI
-    data/                         # schema, migrations, persistence
-    api/                          # receipt parsing, backend proxy
-    ui/                           # theming, widgets
   explanation/
     index.md
+    project-overview.md
     architecture-overview.md
-    design-decisions.md
-    tradeoffs.md
-    constraints.md
-    glossary.md
+  reference/
+    index.md
+    architecture/
+      index.md
+    general/
+      index.md
 ```
 
 ## Placement rules (Diataxis)
 
-1) **Tutorials** = learning‑oriented, step‑by‑step paths for first‑time success.  
-2) **How‑to guides** = task‑oriented steps for real, repeatable workflows.  
-3) **Reference** = code‑structured, factual details aligned with source layout.  
-4) **Explanation** = concepts, rationale, tradeoffs, architecture reasoning.  
+1. **Tutorials** = learning-oriented, step-by-step paths for first-time success.
+2. **How-to guides** = task-oriented steps for real, repeatable workflows.
+3. **Reference** = code-structured, factual details aligned with source layout.
+4. **Explanation** = concepts, rationale, tradeoffs, and architecture reasoning.
 
 If a document mixes multiple purposes, split it and place each part in its own category.
 
-## Required tagging (app docs)
+Optional tutorial example (add only when it exists):
 
-App docs must include a Diataxis category tag in frontmatter `tags`:
+`docs/app/tutorials/getting-started.md`
 
-- `tutorial`, `how-to`, `reference`, `explanation`, or `overview`.
+## Required tagging (app docs in Diataxis folders)
 
-## Feature documentation placement
+App docs under `/docs/app/tutorials/`, `/docs/app/how-to/`, `/docs/app/reference/`, and `/docs/app/explanation/` must include at least one required Diataxis category tag in frontmatter `tags`:
 
-Use a dual placement approach:
+- Required category tag values: `tutorial`, `how-to`, `reference`, `explanation`
+- Optional descriptive tags may be added when useful (for example, `overview`)
+- Valid example: `tags: [app, explanation, overview]`
 
-- **Explanation**: `docs/app/explanation/feature-overview.md`  
-  High‑level feature catalog and conceptual grouping.
-- **Reference**: `docs/app/reference/features/<feature>.md`  
-  Concrete details: routes, screens, models, state classes, storage, events.
+## Notes on starter accuracy
 
-Only add **How‑to** or **Tutorial** feature docs when there is a real, repeatable task
-or an onboarding path that someone new can follow end‑to‑end.
+- The starter scaffold intentionally includes only placeholder indexes and a small set of explanation/reference starter docs.
+- Add deeper subtrees (for example, API or data references) only when real project content exists.
+- Keep examples generic and repository-agnostic in governance docs.

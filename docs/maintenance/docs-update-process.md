@@ -1,6 +1,6 @@
 ---
 title: "Docs Update Process"
-last_updated: 2026-01-17 # YYYY-MM-DD
+last_updated: 2026-02-25 # YYYY-MM-DD
 tags: [maintenance, documentation, process]
 ---
 
@@ -19,8 +19,10 @@ Use this process whenever you add, update, move, or delete documentation so chan
    - Record the doc-impact decision (Yes/No + rationale) in the task plan per `/docs/governance/doc-impact-detection-guidance.md`.
    - If Doc impact = No, include a short justification listing which trigger categories were evaluated and why none apply (per `/docs/governance/doc-impact-detection-guidance.md`).
 2. **Classify and place docs (Diataxis)**
-   - For app docs, choose the Diataxis category (tutorial, how-to, reference, explanation, overview).
+   - For app docs under Diataxis folders (`/docs/app/tutorials/`, `/docs/app/how-to/`, `/docs/app/reference/`, `/docs/app/explanation/`), choose the Diataxis category (tutorial, how-to, reference, explanation).
+   - Optional descriptive tags (for example, `overview`) may be added in frontmatter, but they do not replace the required Diataxis category tag.
    - Place the doc under the correct folder in `/docs/app/` per `/docs/governance/link-and-index-rules.md`.
+   - Treat `/docs/app/index.md` as a navigation index, not a Diataxis category document.
 3. **Select targets and create drafts**
    - Identify the specific docs to update or create.
    - For new docs, start from `/docs/_templates/doc-template.md`.

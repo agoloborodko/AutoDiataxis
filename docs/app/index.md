@@ -1,12 +1,12 @@
 ---
 title: "App Documentation Index"
-last_updated: 2026-02-23
-tags: [index, app, documentation, overview]
+last_updated: 2026-02-25
+tags: [index, app, documentation]
 ---
 
 # App Documentation Index
 
-Brief summary: Starter index for project-specific application documentation organized by Diataxis categories.
+Brief summary: Starter index for project-specific application documentation organized by strict Diataxis categories.
 
 ## When to use this doc
 
@@ -18,21 +18,21 @@ Use this index as the entry point for documenting the current repository's appli
 2. Add or update docs in the correct Diataxis folder.
 3. Keep indexes updated as new docs are added.
 
-## Overview
+## Tutorials
 
-- [App Overview Index](/docs/app/overview/index.md)
+- [App Tutorials Index](/docs/app/tutorials/index.md)
 
-## Explanation
+## How-to
 
-- [App Explanation Index](/docs/app/explanation/index.md)
+- [App How-To Guides](/docs/app/how-to/index.md)
 
 ## Reference
 
 - [App Reference Index](/docs/app/reference/index.md)
 
-## How-to
+## Explanation
 
-- [App How-To Guides](/docs/app/how-to/index.md)
+- [App Explanation Index](/docs/app/explanation/index.md)
 
 ## Related docs
 

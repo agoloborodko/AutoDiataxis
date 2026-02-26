@@ -1,6 +1,6 @@
 ---
 title: "Docs Update Review Checklist"
-last_updated: 2026-01-17 # YYYY-MM-DD
+last_updated: 2026-02-25 # YYYY-MM-DD
 tags: [maintenance, documentation, checklist, review]
 ---
 
@@ -20,7 +20,7 @@ Note: This is a read-only template. Keep all boxes unchecked here; the story cop
 - [ ] Checklist copied into the story file (task plan) with completion evidence.
 - [ ] Verify required doc updates match the triggers in `/docs/governance/update-triggers.md`.
 - [ ] Ensure new or updated docs follow `/docs/_templates/doc-template.md` and the checklist in `/docs/_templates/doc-template-checklist.md`.
-- [ ] For app docs, confirm Diataxis category tag is present and correct (tutorial/how-to/reference/explanation/overview).
+- [ ] For app docs in Diataxis folders (`/docs/app/tutorials/`, `/docs/app/how-to/`, `/docs/app/reference/`, `/docs/app/explanation/`), confirm a required Diataxis category tag is present and correct (tutorial/how-to/reference/explanation); extra descriptive tags are allowed.
 - [ ] For app docs, confirm placement under the correct Diataxis folder in `/docs/app/`.
 - [ ] Verify all links are root-relative and parent index updates comply with `/docs/governance/link-and-index-rules.md`.
 - [ ] Confirm the updates log entry is present in `/docs/updates.md` and follows the requirements in `/docs/maintenance/docs-update-process.md`.

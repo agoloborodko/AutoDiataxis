@@ -1,16 +1,16 @@
 ---
 title: "App Reference Index"
-last_updated: 2026-02-23
+last_updated: 2026-02-25
 tags: [index, app, reference, documentation]
 ---
 
 # App Reference Index
 
-Brief summary: Factual, code-structured reference documentation for the project.
+Brief summary: Factual, code-structured reference documentation for the project and its implementation details.
 
 ## When to use this doc
 
-Use this index to find concrete technical reference docs aligned to code and runtime structure.
+Use this index to find concrete technical reference docs aligned to code, runtime structure, and implementation contracts. Use Explanation docs for rationale and tradeoffs.
 
 ## Reference areas
 

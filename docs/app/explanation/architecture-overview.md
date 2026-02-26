@@ -1,16 +1,16 @@
 ---
 title: "Architecture Overview"
-last_updated: 2026-02-23
+last_updated: 2026-02-25
 tags: [app, explanation, documentation]
 ---
 
 # Architecture Overview
 
-Brief summary: Placeholder architecture explanation. Replace with the system's major components, interactions, and key tradeoffs.
+Brief summary: Placeholder architecture explanation focused on why the system is designed this way, including tradeoffs, boundaries, and rationale.
 
 ## When to use this doc
 
-Use this doc to understand why the system is structured the way it is.
+Use this doc to understand architecture intent, tradeoffs, and design reasoning before consulting code-aligned reference details.
 
 ## Suggested sections
 
@@ -23,4 +23,6 @@ Use this doc to understand why the system is structured the way it is.
 ## Related docs
 
 - [App Explanation Index](/docs/app/explanation/index.md)
+- [Project Overview](/docs/app/explanation/project-overview.md)
 - [App Reference Index](/docs/app/reference/index.md)
+- [App Architecture Reference](/docs/app/reference/architecture/index.md)

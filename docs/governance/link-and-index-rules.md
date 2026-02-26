@@ -1,6 +1,6 @@
 ---
 title: "Link and Index Update Rules"
-last_updated: 2026-01-02 # YYYY-MM-DD
+last_updated: 2026-02-25 # YYYY-MM-DD
 tags: [governance, links, index, documentation]
 ---
 
@@ -32,18 +32,19 @@ Use this document whenever you add, move, or update documentation content or nav
    - Do not add direct links that bypass indexes unless the doc is referenced by an index.
    - A doc is considered "referenced by an index" when it is linked from its nearest parent index (for example, `/docs/governance/index.md` for `/docs/governance/link-and-index-rules.md`).
 
-5. **Diataxis placement is required for app docs**
-   - App documentation MUST live under the correct Diataxis folder:
+5. **Diataxis placement is required for app docs in Diataxis folders**
+   - App documentation in the Diataxis categories MUST live under the correct folder:
      - Tutorials → `/docs/app/tutorials/`
      - How-to guides → `/docs/app/how-to/`
      - Reference → `/docs/app/reference/`
      - Explanation → `/docs/app/explanation/`
-     - Overview → `/docs/app/overview/`
+   - The root app index (`/docs/app/index.md`) is a navigation index, not a Diataxis category document.
    - The doc must match its folder’s purpose (no mixed-purpose docs).
 
-6. **Diataxis category tagging is required for app docs**
-   - App docs MUST include a Diataxis category tag in frontmatter `tags`.
-   - Allowed values: `tutorial`, `how-to`, `reference`, `explanation`, `overview`.
+6. **Diataxis category tagging is required for app docs in Diataxis folders**
+   - App docs under `/docs/app/tutorials/`, `/docs/app/how-to/`, `/docs/app/reference/`, and `/docs/app/explanation/` MUST include at least one required Diataxis category tag in frontmatter `tags`.
+   - Required category tag values: `tutorial`, `how-to`, `reference`, `explanation`.
+   - Additional descriptive tags are allowed (for example, `overview`) if the required Diataxis category tag is present.
 
 ## Related docs
 
