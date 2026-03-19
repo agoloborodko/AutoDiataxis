@@ -1,6 +1,6 @@
 ---
 title: "Review Enforcement Rules"
-last_updated: 2026-01-17 # YYYY-MM-DD
+last_updated: 2026-03-19 # YYYY-MM-DD
 tags: [governance, review, documentation]
 ---
 
@@ -70,6 +70,7 @@ Completion criteria: **All** checklist items are verified. If any item fails, ap
 - Missing parent index update after adding a new doc.
 - Missing or incomplete `/docs/updates.md` entry.
 - “No doc impact” declared without verifying all trigger categories.
+- **[High]** Doc content transcribes code (hex values, token lists, file structure) instead of capturing design rationale, intent, and invariants.
 
 ## Related docs
 

@@ -1,6 +1,6 @@
 ---
 title: "Docs Update Process"
-last_updated: 2026-02-25 # YYYY-MM-DD
+last_updated: 2026-03-19 # YYYY-MM-DD
 tags: [maintenance, documentation, process]
 ---
 
@@ -29,6 +29,14 @@ Use this process whenever you add, update, move, or delete documentation so chan
 4. **Author or update content**
    - Make the content changes required by the task or workflow.
    - Keep guidance concise, explicit, and enforceable.
+
+   **Content quality principle:**
+   - **Document what code cannot tell you:** design rationale, why-not choices, invariants, constraints, and the intent behind patterns.
+   - **Do not transcribe code:** never duplicate values, signatures, or structure that are more reliably read from source. A file pointer with a root-relative path (e.g., "see `lib/core/theme/app_tokens.dart`") is sufficient.
+   - **Explain choices:** when multiple approaches exist, document why this one was chosen and what alternatives were rejected.
+   - **Capture invariants:** document rules and constraints that must hold true but aren't enforced by code (e.g., "banner tokens are intentionally separate from status tokens so they can be tuned independently").
+
+   > Antipattern: a doc that lists every token name, hex value, and derivation from code — information that is already the source of truth in the code files themselves.
 5. **Verify template compliance**
    - Check required frontmatter and sections using `/docs/_templates/doc-template-checklist.md`.
    - Ensure `last_updated` uses `YYYY-MM-DD` and `tags` is a list.

@@ -1,6 +1,6 @@
 ---
 title: "Docs Update Review Checklist"
-last_updated: 2026-02-25 # YYYY-MM-DD
+last_updated: 2026-03-19 # YYYY-MM-DD
 tags: [maintenance, documentation, checklist, review]
 ---
 
@@ -25,6 +25,7 @@ Note: This is a read-only template. Keep all boxes unchecked here; the story cop
 - [ ] Verify all links are root-relative and parent index updates comply with `/docs/governance/link-and-index-rules.md`.
 - [ ] Confirm the updates log entry is present in `/docs/updates.md` and follows the requirements in `/docs/maintenance/docs-update-process.md`.
 - [ ] Validate navigation: each new doc is reachable from its nearest parent index.
+- [ ] **[High]** Verify doc content captures intent, rationale, and invariants rather than transcribing code. See step 4 content quality rules in `/docs/maintenance/docs-update-process.md`.
 
 ## Migration verification (legacy migrations)
 
