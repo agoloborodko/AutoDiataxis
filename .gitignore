@@ -4,3 +4,6 @@
 /.gemini/
 /_bmad/
 /.agents/
+.DS_Store
+.idea/
+.vscode/
