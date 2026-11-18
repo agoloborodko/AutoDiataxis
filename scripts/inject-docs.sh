@@ -73,7 +73,9 @@ if [ "$overwrite_docs" -eq 1 ] && [ -e "$target_docs" ]; then
 fi
 
 mkdir -p "$target_docs"
-( cd "$source_docs" && tar --exclude='.DS_Store' -cf - . ) | ( cd "$target_docs" && tar -xf - )
+# Copy the rules and scaffold. Leave dated update records behind so a new
+# project starts with an empty docs/updates/ directory.
+( cd "$source_docs" && tar --exclude='.DS_Store' --exclude='updates.md' --exclude='updates/*.md' -cf - . ) | ( cd "$target_docs" && tar -xf - )
 
 begin_marker="# BEGIN injected-docs-context (AutoDiataxis)"
 end_marker="# END injected-docs-context (AutoDiataxis)"

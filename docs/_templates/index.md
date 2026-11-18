@@ -1,6 +1,6 @@
 ---
 title: "Templates Index"
-last_updated: 2025-12-27 # YYYY-MM-DD
+last_updated: 2026-11-18 # YYYY-MM-DD
 tags: [templates, index, documentation]
 ---
 
@@ -15,7 +15,7 @@ Use this index to find the canonical documentation template and its checklist.
 ## Related docs
 
 - [Documentation Index](/docs/index.md)
-- [Documentation Updates Log](/docs/updates.md)
+- [Documentation Updates](/docs/updates/)
 
 ## Templates
 

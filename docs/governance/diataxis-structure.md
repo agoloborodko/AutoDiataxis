@@ -1,6 +1,6 @@
 ---
 title: "Diataxis Structure (App Docs)"
-last_updated: 2026-02-25 # YYYY-MM-DD
+last_updated: 2026-11-16 # YYYY-MM-DD
 tags: [governance, documentation, structure, diataxis]
 ---
 
@@ -53,6 +53,10 @@ App docs under `/docs/app/tutorials/`, `/docs/app/how-to/`, `/docs/app/reference
 - Required category tag values: `tutorial`, `how-to`, `reference`, `explanation`
 - Optional descriptive tags may be added when useful (for example, `overview`)
 - Valid example: `tags: [app, explanation, overview]`
+
+## Reference growth
+
+A new factual reference topic that is its own area is a new file under the matching `/docs/app/reference/` folder, linked from that folder's parent index. An existing reference catalog may still be edited for a change inside the area it already covers.
 
 ## Notes on starter accuracy
 

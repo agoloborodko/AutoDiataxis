@@ -1,6 +1,6 @@
 ---
 title: "Maintenance Index"
-last_updated: 2025-12-29 # YYYY-MM-DD
+last_updated: 2026-11-18 # YYYY-MM-DD
 tags: [maintenance, index, documentation]
 ---
 
@@ -20,5 +20,5 @@ Use this index to find documentation maintenance processes and reviewer checklis
 ## Related docs
 
 - [Documentation Index](/docs/index.md)
-- [Documentation Updates Log](/docs/updates.md)
+- [Documentation Updates](/docs/updates/)
 - [Governance Index](/docs/governance/index.md)

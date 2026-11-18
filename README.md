@@ -2,6 +2,8 @@
 
 Reusable documentation starter pack for any repository.
 
+Version: 1.0.0 (`VERSION`). There was no earlier version number, tag, or release. 1.0.0 is the first declared contract. It removes `docs/updates.md`: a new project records each meaningful change as its own file under `docs/updates/` and does not receive this repository's history.
+
 ## AI Agent Workflow
 
 This project is tailored for working with AI agents, specifically [BMAD-METHOD](https://docs.bmad-method.org/), but it should work with any agent.
@@ -27,7 +29,7 @@ docs/
   maintenance/     # docs update process + review checklist
   app/             # generic project-specific scaffold (Diataxis-oriented)
   index.md         # root docs index
-  updates.md       # docs updates log
+  updates/         # one file per meaningful change; the starter ships this directory empty
 project-context.md # minimal guidance block to inject into target repos
 scripts/
   inject-docs.sh   # plain Bash injector
@@ -39,7 +41,7 @@ Script: `scripts/inject-docs.sh`
 
 What it does:
 
-1. Copies this repo's `docs/` folder into `TARGET_REPO/docs`
+1. Copies this repo's `docs/` folder into `TARGET_REPO/docs`, without `docs/updates.md` or dated files in `docs/updates/`
 2. Appends this repo's `project-context.md` to `TARGET_REPO/project-context.md`
 3. Adds marker comments so the context block is not appended twice
 
@@ -72,4 +74,4 @@ After injection into a target repo:
 2. Keep governance/maintenance rules as-is unless intentionally changing process
 3. Replace placeholders in `/docs/app/overview/project-overview.md`
 4. Add project-specific docs under `/docs/app/` using Diataxis placement rules
-5. Maintain `/docs/updates.md` as docs evolve
+5. Record each meaningful documentation change as one file under `/docs/updates/`, with frontmatter, a summary, and links. The injected directory starts empty.
