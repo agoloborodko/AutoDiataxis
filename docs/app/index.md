@@ -1,6 +1,6 @@
 ---
 title: "App Documentation Index"
-last_updated: 2026-02-25
+last_updated: 2026-11-18
 tags: [index, app, documentation]
 ---
 
@@ -37,5 +37,5 @@ Use this index as the entry point for documenting the current repository's appli
 ## Related docs
 
 - [Documentation Index](/docs/index.md)
-- [Documentation Updates Log](/docs/updates.md)
+- [Documentation Updates](/docs/updates/)
 - [Diataxis Structure (App Docs)](/docs/governance/diataxis-structure.md)

@@ -1,6 +1,6 @@
 ---
 title: Documentation Index
-last_updated: 2026-02-23
+last_updated: 2026-11-18
 tags: [index, documentation]
 ---
 
@@ -14,7 +14,7 @@ Use this index to navigate the documentation system and start from the right wor
 
 ## Related docs
 
-- [Documentation Updates Log](/docs/updates.md)
+- [Documentation Updates](/docs/updates/)
 - [Doc Template](/docs/_templates/doc-template.md)
 
 ## Templates

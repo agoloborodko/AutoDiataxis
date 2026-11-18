@@ -43,7 +43,7 @@ Use this process whenever you add, update, move, or delete documentation so chan
    - Ensure `last_updated` uses `YYYY-MM-DD` and `tags` is a list.
 6. **Update navigation and indexes**
    - Update the nearest parent index for every new doc (and when moving or removing docs), except a new file under `/docs/updates/`.
-   - A file under `/docs/updates/` is reached from the standing notice on `/docs/updates.md` and does not get its own index line.
+   - A file under `/docs/updates/` does not get its own index line. The documentation indexes link to `/docs/updates/`.
    - Update `/docs/index.md` only if a top-level navigation section changes.
    - For app docs, update `/docs/app/index.md` and the relevant Diataxis sub-index if applicable.
    - Follow `/docs/governance/link-and-index-rules.md` for link format and index rules.
@@ -51,7 +51,7 @@ Use this process whenever you add, update, move, or delete documentation so chan
    - For a meaningful behavior, contract, setup, or process change, add one new file `/docs/updates/YYYY-MM-DD-<slug>.md`.
    - The slug is the change or story key, or `no-story-<short-slug>` when neither applies, and it is unique on that date. Several steps of that same change, including shards of one migration, go in this one file.
    - Include frontmatter `title`, `last_updated` (`YYYY-MM-DD`), and `tags`, plus the date, a concise summary, root-relative links to the resulting guidance, and the story key (`no-story` when none applies). The index exception does not drop the frontmatter.
-   - Do not insert a new dated entry into `/docs/updates.md`. That file keeps earlier entries. Its standing notice links to [/docs/updates/](/docs/updates/) for later records.
+   - Do not create a shared `docs/updates.md`. The record is only that new file.
    - Typo, link, and formatting corrections do not get an update file.
 8. **Run reviewer verification**
    - Use the reviewer checklist: `/docs/maintenance/docs-update-review-checklist.md`.
@@ -74,7 +74,7 @@ Use these steps to migrate or transfer documentation content into the canonical 
    - Ensure all links in migrated or updated docs are root-relative from repository root.
 4. **Update navigation and logs**
    - Update the relevant sub-index with root-relative links (from repository root). A file under `/docs/updates/` does not get an index line.
-   - Add one file `/docs/updates/YYYY-MM-DD-<slug>.md` with a short summary, links, and a story key (use `no-story` when no story applies). Do not insert that record into `/docs/updates.md`.
+   - Add one file `/docs/updates/YYYY-MM-DD-<slug>.md` with frontmatter, a short summary, links, and a story key (use `no-story` when no story applies). Do not create a shared `docs/updates.md`.
 5. **Verify the transfer**
    - Confirm template compliance, link integrity, and index reachability.
    - Validate coverage parity with the legacy source (no meaning loss).
@@ -112,7 +112,7 @@ Use this workflow when splitting a legacy document into smaller, maintainable fi
    - Ensure the sharded set covers the original content without loss.
 3. **Update navigation for each shard and keep one updates record**
    - Update the nearest parent index for any new sharded doc.
-   - Add each shard's summary, links, and story key (use `no-story` when no story applies) to the change's one `/docs/updates/YYYY-MM-DD-<slug>.md` file. Do not add a second file for another step of the same change, and do not insert that record into `/docs/updates.md`.
+   - Add each shard's summary, links, and story key (use `no-story` when no story applies) to the change's one `/docs/updates/YYYY-MM-DD-<slug>.md` file. Do not add a second file for another step of the same change, and do not create a shared `docs/updates.md`.
 4. **Handle oversized legacy files**
    - If sharding one legacy file would exceed the per-PR maximum, split the file’s sections across multiple PRs.
    - Each PR is its own change and keeps its own `/docs/updates/YYYY-MM-DD-<slug>.md` file. The slug is that change's key.
@@ -130,5 +130,5 @@ Use this workflow when splitting a legacy document into smaller, maintainable fi
 - [Documentation Update Triggers](/docs/governance/update-triggers.md)
 - [Doc-Impact Detection Guidance](/docs/governance/doc-impact-detection-guidance.md)
 - [Link and Index Update Rules](/docs/governance/link-and-index-rules.md)
-- [Documentation Updates Log](/docs/updates.md)
+- [Documentation Updates](/docs/updates/)
 - [Docs Update Review Checklist](/docs/maintenance/docs-update-review-checklist.md)

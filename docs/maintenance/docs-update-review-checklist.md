@@ -23,8 +23,8 @@ Note: This is a read-only template. Keep all boxes unchecked here; the story cop
 - [ ] For app docs in Diataxis folders (`/docs/app/tutorials/`, `/docs/app/how-to/`, `/docs/app/reference/`, `/docs/app/explanation/`), confirm a required Diataxis category tag is present and correct (tutorial/how-to/reference/explanation); extra descriptive tags are allowed.
 - [ ] For app docs, confirm placement under the correct Diataxis folder in `/docs/app/`.
 - [ ] Verify all links are root-relative and parent index updates comply with `/docs/governance/link-and-index-rules.md`. A file under `/docs/updates/` does not get an index line.
-- [ ] Confirm a meaningful change has one file under `/docs/updates/` that follows `/docs/maintenance/docs-update-process.md`. Do not require a new dated entry in `/docs/updates.md`.
-- [ ] Validate navigation: each new doc outside `/docs/updates/` is reachable from its nearest parent index. A file under `/docs/updates/` is reached from the standing notice on `/docs/updates.md`.
+- [ ] Confirm a meaningful change has one file under `/docs/updates/` that follows `/docs/maintenance/docs-update-process.md`, with frontmatter, a summary, and links. Do not require `docs/updates.md`.
+- [ ] Validate navigation: each new doc outside `/docs/updates/` is reachable from its nearest parent index. A file under `/docs/updates/` does not get its own index line.
 - [ ] **[High]** Verify doc content captures intent, rationale, and invariants rather than transcribing code. See step 4 content quality rules in `/docs/maintenance/docs-update-process.md`.
 
 ## Migration verification (legacy migrations)
@@ -34,7 +34,7 @@ Use this section when reviewing a legacy migration or sharded transfer.
 - [ ] Coverage parity: a source-to-target mapping exists and every source heading is accounted for.
 - [ ] Link integrity: all links in migrated docs are root-relative and resolve to existing files.
 - [ ] Index reachability: each migrated doc is linked from its nearest parent `index.md`.
-- [ ] Updates log: one `/docs/updates/YYYY-MM-DD-<slug>.md` file exists with summary, links, and story key. It is not a new dated entry in `/docs/updates.md`.
+- [ ] Updates log: one `/docs/updates/YYYY-MM-DD-<slug>.md` file exists with frontmatter, a summary, links, and a story key. There is no shared `docs/updates.md`.
 - [ ] Template compliance: migrated docs follow `/docs/_templates/doc-template.md` and the checklist in `/docs/_templates/doc-template-checklist.md`.
 - [ ] Reuse check: no parallel governance/process rules were created; updates stay within existing docs.
 - [ ] Reviewer sign-off is recorded in the migration's `/docs/updates/YYYY-MM-DD-<slug>.md` file and checked here before marking a migration complete or deleting legacy content.
@@ -45,7 +45,7 @@ Use this section when reviewing a legacy migration or sharded transfer.
 - [ ] Reviewer sign-off recorded in the deletion's `/docs/updates/YYYY-MM-DD-<slug>.md` file using the required format (e.g., `Sign-off: @reviewer on YYYY-MM-DD`).
 - [ ] Migration workflow steps complete and aligned.
 - [ ] Migration execution tasks complete, including archive decisions.
-- [ ] The deletion's `/docs/updates/YYYY-MM-DD-<slug>.md` file includes the date, story key (or `no-story`), deletion scope/summary, and root-relative links/pointers to migration evidence. It is not a new dated entry in `/docs/updates.md`.
+- [ ] The deletion's `/docs/updates/YYYY-MM-DD-<slug>.md` file includes the date, story key (or `no-story`), deletion scope/summary, and root-relative links/pointers to migration evidence.
 
 ## Related docs
 
@@ -54,4 +54,4 @@ Use this section when reviewing a legacy migration or sharded transfer.
 - [Documentation Update Triggers](/docs/governance/update-triggers.md)
 - [Link and Index Update Rules](/docs/governance/link-and-index-rules.md)
 - [Doc Template Checklist](/docs/_templates/doc-template-checklist.md)
-- [Documentation Updates Log](/docs/updates.md)
+- [Documentation Updates](/docs/updates/)

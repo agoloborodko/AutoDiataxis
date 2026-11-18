@@ -23,7 +23,7 @@ Use this document whenever you add, move, or update documentation content or nav
 2. **Parent index updates are required for every new doc**
    - When adding a new doc, update the parent folder index to include the new doc.
    - Example: Adding `/docs/governance/link-and-index-rules.md` requires updating `/docs/governance/index.md`.
-   - Exception: a new file under `/docs/updates/` does not get an index line. Readers reach it from the standing notice on `/docs/updates.md`.
+   - Exception: a new file under `/docs/updates/` does not get its own index line. The documentation indexes link to `/docs/updates/`.
 
 3. **Root index updates only for top-level navigation changes**
    - Update `/docs/index.md` only when adding or changing top-level navigation sections.
@@ -32,7 +32,7 @@ Use this document whenever you add, move, or update documentation content or nav
 4. **Index-first navigation**
    - Do not add direct links that bypass indexes unless the doc is referenced by an index.
    - A doc is considered "referenced by an index" when it is linked from its nearest parent index (for example, `/docs/governance/index.md` for `/docs/governance/link-and-index-rules.md`).
-   - A file under `/docs/updates/` is referenced by the standing notice on `/docs/updates.md` instead of by its own index line.
+   - A file under `/docs/updates/` is reached from the `/docs/updates/` link in the documentation indexes, not from its own index line.
 
 5. **Diataxis placement is required for app docs in Diataxis folders**
    - App documentation in the Diataxis categories MUST live under the correct folder:
@@ -52,5 +52,5 @@ Use this document whenever you add, move, or update documentation content or nav
 
 - [Documentation Index](/docs/index.md)
 - [Governance Index](/docs/governance/index.md)
-- [Documentation Updates Log](/docs/updates.md)
+- [Documentation Updates](/docs/updates/)
 - [Diataxis Structure (App Docs)](/docs/governance/diataxis-structure.md)

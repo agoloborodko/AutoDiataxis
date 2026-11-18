@@ -21,10 +21,10 @@ Use this checklist before creating or updating any documentation.
 - Keep all links root-relative (e.g., `/docs/area/index.md`).
 - Update the nearest parent index to include the new or updated doc. A file under `/docs/updates/` does not get an index line.
 - Update `/docs/index.md` only for top-level navigation changes.
-- For a meaningful change, add `/docs/updates/YYYY-MM-DD-<slug>.md` as described in `/docs/maintenance/docs-update-process.md`. Do not add a new dated entry to `/docs/updates.md`.
+- For a meaningful change, add `/docs/updates/YYYY-MM-DD-<slug>.md` as described in `/docs/maintenance/docs-update-process.md`, with frontmatter, a summary, and links. Do not create a shared `docs/updates.md`.
 
 ## Related docs
 
 - [Documentation Index](/docs/index.md)
 - [Doc Template](/docs/_templates/doc-template.md)
-- [Documentation Updates Log](/docs/updates.md)
+- [Documentation Updates](/docs/updates/)

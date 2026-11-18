@@ -23,8 +23,8 @@ Block approval when **any** doc-update trigger applies **and** any required docu
 Required updates include:
 
 - The relevant documentation content updates.
-- The parent index update for any new doc outside `/docs/updates/` (and explicit confirmation when no index update is expected). A file under `/docs/updates/` is reached from the standing notice on `/docs/updates.md`.
-- One new file `/docs/updates/YYYY-MM-DD-<slug>.md` for a meaningful change. Do not require a new dated entry in `/docs/updates.md`.
+- The parent index update for any new doc outside `/docs/updates/` (and explicit confirmation when no index update is expected). A file under `/docs/updates/` does not get its own index line. The documentation indexes link to `/docs/updates/`.
+- One new file `/docs/updates/YYYY-MM-DD-<slug>.md` for a meaningful change, with frontmatter, a summary, and links. Do not require `docs/updates.md`.
 - A doc-impact declaration in the task plan (story file).
 - The docs review checklist copied into the story file (task plan) with completion evidence.
 
@@ -35,8 +35,8 @@ Also block approval if the required doc-impact declaration is missing, regardles
 At minimum, reviewers MUST verify:
 
 - **Template compliance:** New/updated docs follow `/docs/_templates/doc-template.md` and required frontmatter.
-- **Parent index updates:** New docs outside `/docs/updates/` are linked from their nearest parent index per `/docs/governance/link-and-index-rules.md`. A file under `/docs/updates/` does not get an index line. If no index update is expected for any other doc, reviewers must verify and document why.
-- **Updates log entry:** A meaningful change has one new file under `/docs/updates/` that follows `/docs/maintenance/docs-update-process.md`. Approval is not blocked because `/docs/updates.md` has no new dated entry.
+- **Parent index updates:** New docs outside `/docs/updates/` are linked from their nearest parent index per `/docs/governance/link-and-index-rules.md`. A file under `/docs/updates/` does not get its own index line. If no index update is expected for any other doc, reviewers must verify and document why.
+- **Updates log entry:** A meaningful change has one new file under `/docs/updates/` that follows `/docs/maintenance/docs-update-process.md`, including frontmatter, a summary, and links. Approval is not blocked because `docs/updates.md` is absent.
 - **Link integrity:** Links are root-relative (e.g., `/docs/...`).
 
 ## Doc-impact declaration gate (see [Doc-Impact Detection Guidance](/docs/governance/doc-impact-detection-guidance.md))
@@ -59,7 +59,7 @@ Use the following checklist during review:
 - [ ] Triggers evaluated against `/docs/governance/update-triggers.md`.
 - [ ] Required docs updated using the canonical template and required frontmatter.
 - [ ] Parent index updated for any new docs outside `/docs/updates/`, or explicit verification recorded when no index update is expected. Files under `/docs/updates/` are exempt.
-- [ ] One `/docs/updates/YYYY-MM-DD-<slug>.md` file added per `/docs/maintenance/docs-update-process.md` for a meaningful change. No new dated entry in `/docs/updates.md`.
+- [ ] One `/docs/updates/YYYY-MM-DD-<slug>.md` file added per `/docs/maintenance/docs-update-process.md` for a meaningful change, with frontmatter, a summary, and links. No shared `docs/updates.md`.
 - [ ] All links are root-relative.
 - [ ] Doc-first rule satisfied for behavior changes.
 
@@ -78,5 +78,5 @@ Completion criteria: **All** checklist items are verified. If any item fails, ap
 - [Documentation Update Triggers](/docs/governance/update-triggers.md)
 - [Doc-Impact Detection Guidance](/docs/governance/doc-impact-detection-guidance.md)
 - [Link and Index Update Rules](/docs/governance/link-and-index-rules.md)
-- [Documentation Updates Log](/docs/updates.md)
+- [Documentation Updates](/docs/updates/)
 - [Docs Update Review Checklist](/docs/maintenance/docs-update-review-checklist.md)
