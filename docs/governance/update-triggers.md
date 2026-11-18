@@ -1,6 +1,6 @@
 ---
 title: "Documentation Update Triggers"
-last_updated: 2026-01-02 # YYYY-MM-DD
+last_updated: 2026-11-16 # YYYY-MM-DD
 tags: [governance, documentation, updates]
 ---
 
@@ -40,7 +40,7 @@ Documentation MUST be updated when any of the following apply:
 - **Behavior changes:** Adjusting required steps for a documentation workflow.
 - **New features/workflows:** Adding a new documentation workflow that needs guidance.
 - **API/contract changes:** Requiring a new frontmatter field across docs.
-- **Data/model changes:** Changing the required fields in `/docs/updates.md` entries.
+- **Data/model changes:** Changing the required fields of a `/docs/updates/YYYY-MM-DD-<slug>.md` record. `/docs/updates.md` stays the archive of earlier entries.
 - **Migrations/schema changes:** Updating migration checklists for legacy doc moves.
 - **Tooling/process changes:** Changing review gates for documentation updates.
 - **Structure/category changes:** Introducing new structure rules, renaming Diataxis folders, or changing required category tags.

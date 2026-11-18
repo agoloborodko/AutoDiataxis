@@ -27,7 +27,7 @@ docs/
   maintenance/     # docs update process + review checklist
   app/             # generic project-specific scaffold (Diataxis-oriented)
   index.md         # root docs index
-  updates.md       # docs updates log
+  updates.md       # archive of earlier records; new records are files in updates/
 project-context.md # minimal guidance block to inject into target repos
 scripts/
   inject-docs.sh   # plain Bash injector
@@ -72,4 +72,4 @@ After injection into a target repo:
 2. Keep governance/maintenance rules as-is unless intentionally changing process
 3. Replace placeholders in `/docs/app/overview/project-overview.md`
 4. Add project-specific docs under `/docs/app/` using Diataxis placement rules
-5. Maintain `/docs/updates.md` as docs evolve
+5. Record each meaningful documentation change as one file under `/docs/updates/`. `/docs/updates.md` is the archive of earlier records.

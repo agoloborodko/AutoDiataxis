@@ -1,18 +1,20 @@
 ---
 title: Documentation Updates Log
-last_updated: 2026-02-25
+last_updated: 2026-11-18
 tags: [documentation, updates, changelog]
 ---
 
 # Documentation Updates Log
 
-Brief summary: Dated log of documentation changes made in this repository.
+Brief summary: Archive of documentation changes recorded before 2026-11-16. Later meaningful updates are separate files.
 
 ## When to use this doc
 
-Add one entry for each documentation change set after updating docs and indexes.
+Read this file for records dated before 2026-11-16. A later meaningful change is one new file under [/docs/updates/](/docs/updates/), named `YYYY-MM-DD-<slug>.md`. That file does not get an index line. Do not add a new dated entry to this archive.
 
 ## Entry format
+
+Historical entries below use:
 
 - `YYYY-MM-DD (story-key-or-no-story): Short summary. Links: [Documentation Index](/docs/index.md). Sign-off: @reviewer on YYYY-MM-DD`
 

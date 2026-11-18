@@ -1,6 +1,6 @@
 ---
 title: "Doc Template Checklist"
-last_updated: 2026-01-01 # YYYY-MM-DD
+last_updated: 2026-11-16 # YYYY-MM-DD
 tags: [templates, checklist, documentation, governance]
 ---
 
@@ -19,9 +19,9 @@ Use this checklist before creating or updating any documentation.
 - For `sections`, provide one or more items with `title` and `body` for each content section (optional for index docs).
 - Ensure `last_updated` uses `YYYY-MM-DD` format and `tags` is a list.
 - Keep all links root-relative (e.g., `/docs/area/index.md`).
-- Update the nearest parent index to include the new or updated doc.
+- Update the nearest parent index to include the new or updated doc. A file under `/docs/updates/` does not get an index line.
 - Update `/docs/index.md` only for top-level navigation changes.
-- Add a dated entry to `/docs/updates.md` that follows the requirements in `/docs/maintenance/docs-update-process.md`.
+- For a meaningful change, add `/docs/updates/YYYY-MM-DD-<slug>.md` as described in `/docs/maintenance/docs-update-process.md`. Do not add a new dated entry to `/docs/updates.md`.
 
 ## Related docs
 

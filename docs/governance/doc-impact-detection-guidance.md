@@ -1,6 +1,6 @@
 ---
 title: "Doc-Impact Detection Guidance"
-last_updated: 2026-01-17 # YYYY-MM-DD
+last_updated: 2026-11-16 # YYYY-MM-DD
 tags: [governance, documentation, doc-impact]
 ---
 
@@ -28,7 +28,7 @@ Use trigger categories from `/docs/governance/update-triggers.md`.
 Mandatory when any trigger category applies.
 
 - You MUST add documentation update tasks to your task plan (Tasks/Subtasks) before implementation.
-- Doc update tasks must name the specific docs to change and include required parent index changes.
+- Doc update tasks must name the specific docs to change and include required parent index changes. A file under `/docs/updates/` does not get a parent-index line.
 - If Diataxis placement or tags are affected, tasks MUST include updates to structure docs and relevant indexes.
 - Follow `/docs/governance/link-and-index-rules.md` for any new or updated docs.
 
